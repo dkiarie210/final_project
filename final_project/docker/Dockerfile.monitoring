@@ -1,0 +1,7 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements-final.txt .
+RUN pip install --no-cache-dir -r requirements-final.txt
+COPY monitoring ./monitoring
+EXPOSE 8502
+CMD ["streamlit", "run", "monitoring/monitoring_app.py", "--server.address", "0.0.0.0", "--server.port", "8502"]

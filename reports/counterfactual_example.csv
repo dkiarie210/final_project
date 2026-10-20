@@ -1,0 +1,3 @@
+scenario,customer_row,churn_probability,predicted_label,last_login_days,watch_hours,avg_watch_time_per_day
+original,3955,0.9999988046365281,churned,28.0,4.44,0.15
+behavioral_what_if,3955,0.001611779433861402,retained,9.0,24.02,1.46
